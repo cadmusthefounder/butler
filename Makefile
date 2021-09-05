@@ -46,4 +46,4 @@ pre-commit:
 ##
 .PHONY: commit
 commit: pre-commit
-	@poetry run cz commit || (echo "Message commited!"; exit 0)
+	@poetry run cz commit
