@@ -1,0 +1,26 @@
+{
+  "name": "butler",
+  "version": "1.0.0",
+  "description": "Housekeeps everything in a repository.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "commit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cadmusthefounder/butler.git"
+  },
+  "author": "Charlton Lim <cadmusthefounder@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cadmusthefounder/butler/issues"
+  },
+  "homepage": "https://github.com/cadmusthefounder/butler#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@commitlint/prompt-cli": "^13.1.0",
+    "husky": "^7.0.2"
+  }
+}
