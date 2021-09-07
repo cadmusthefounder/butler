@@ -11,52 +11,52 @@ body:
       options:
         - label: I have searched the existing issues.
           required: true
-#   - type: dropdown
-#     attributes:
-#       label: Is this a regression?
-#       placeholder: |
-#         Yes, the previous version in which this bug was not present was...
-#       validations:
-#         required: true
-#   - type: textarea
-#     attributes:
-#       label: Current Behavior
-#       description: A concise description of what you're experiencing.
-#     validations:
-#       required: true
-#   - type: textarea
-#     attributes:
-#       label: Expected Behavior
-#       description: A concise description of what you expected to happen.
-#     validations:
-#       required: true
-#   - type: textarea
-#     attributes:
-#       label: Steps To Reproduce
-#       description: Steps to reproduce the behavior.
-#       placeholder: |
-#         1. Package version is...
-#         2. In this environment...
-#         3. With this config...
-#         4. Run '...'
-#         5. See error...
-#     validations:
-#       required: true
-#   - type: textarea
-#     attributes:
-#       label: Environment
-#       description: |
-#         examples:
-#           - **OS**: Ubuntu 20.04
-#           - **Node**: 13.14.0
-#           - **npm**: 7.6.3
-#       value: |
-#           - OS:
-#           - Node:
-#           - npm:
-#       render: markdown
-#     validations:
-#       required: true
+  - type: dropdown
+    attributes:
+      label: Is this a regression?
+      placeholder: |
+        Yes, the previous version in which this bug was not present was...
+      validations:
+        required: true
+  - type: textarea
+    attributes:
+      label: Current Behavior
+      description: A concise description of what you're experiencing.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: A concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Package version is...
+        2. In this environment...
+        3. With this config...
+        4. Run '...'
+        5. See error...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Environment
+      description: |
+        examples:
+          - **OS**: Ubuntu 20.04
+          - **Node**: 13.14.0
+          - **npm**: 7.6.3
+      value: |
+          - OS:
+          - Node:
+          - npm:
+      render: markdown
+    validations:
+      required: true
 #   - type: textarea
 #     attributes:
 #       label: Anything else?
