@@ -44,6 +44,6 @@ help:
 
 ## Write commit messages.
 ##
-# .PHONY: commit
-# commit:
-# 	@npm run commit
+.PHONY: commit
+commit:
+	@npm run commit
