@@ -7,7 +7,7 @@
     "build": "tsc",
     "test": "jest",
     "pre-commit": "lint-staged",
-    "commit": "commit",
+    "commit": "git-cz",
     "prepare": "husky install"
   },
   "repository": {
@@ -23,10 +23,11 @@
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
-    "@commitlint/prompt-cli": "^13.1.0",
+    "@commitlint/cz-commitlint": "^13.1.0",
     "@types/jest": "^27.0.1",
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
+    "commitizen": "^4.2.4",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jest": "^24.4.0",
@@ -38,10 +39,9 @@
     "ts-jest": "^27.0.5",
     "typescript": "^4.4.2"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
     }
   },
   "lint-staged": {
