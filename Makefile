@@ -38,12 +38,12 @@ help:
 
 ## Run formatters and linters.
 ##
-.PHONY: pre-commit
-pre-commit:
-	@poetry run pre-commit run
+# .PHONY: pre-commit
+# pre-commit:
+# 	@poetry run pre-commit run
 
 ## Write commit messages.
 ##
 .PHONY: commit
-commit: pre-commit
-	@poetry run cz commit
+commit:
+	@npm run commit
