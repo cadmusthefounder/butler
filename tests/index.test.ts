@@ -17,10 +17,3 @@ describe("test multiply function", () => {
     expect(multiply(10, 5)).toBe(50);
   });
 });
-
-describe("test multiply function hi", () => {
-  it("should return 50 for multiply(10, 5)", () => {
-    expect(multiply(10, 5)).toBe(5);
-  });
-});
-

@@ -34,13 +34,33 @@ help:
 		}' \
 		$(MAKEFILE_LIST)
 
+## -- Test --
+
+## Run tests.
+##
+.PHONY: test 
+test:
+	@npm run test
+
+## Get test coverage report.
+##
+.PHONY: coverage
+coverage: test
+	@open ./coverage/lcov-report/index.html
+
 ## -- Utility --
 
-## Run formatters and linters.
+## Transpile TS files to JS files.
 ##
-# .PHONY: pre-commit
-# pre-commit:
-# 	@poetry run pre-commit run
+.PHONY: transpile 
+transpile:
+	@npm run build
+
+## Run formatters, linters and tests on staged files.
+##
+.PHONY: pre-commit
+pre-commit:
+	@npm run pre-commit
 
 ## Write commit messages.
 ##
