@@ -16,8 +16,8 @@ body:
       label: Is this a regression?
       placeholder: |
         Yes, the previous version in which this bug was not present was...
-      validations:
-        required: true
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Current Behavior
