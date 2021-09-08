@@ -10,7 +10,7 @@ it is today! As a contributor, here are the guidelines we would like you to foll
 * [Submission Guidelines](#submission-guidelines)
   * [Submitting an Issue](#submitting-an-issue)
   * [Submitting a Pull Request (PR)](#submitting-a-pr)
-* [Commit Message Guidelines](#commit-message-format)
+* [Commit Message Guidelines](#commit-message-guidelines)
 
 ## Code of Conduct <a name="code-of-conduct"></a>
 
@@ -40,6 +40,8 @@ If you find a bug in the source code, you can help us by
 
 You can *request* a new feature by [submitting an issue](#submitting-an-issue) to our
 GitHub Repository.
+
+## Submission Guidelines <a name="submission-guidelines"></a>
 
 ### Submitting an Issue <a name="submitting-an-issue"></a>
 
@@ -116,6 +118,14 @@ Before you submit your Pull Request (PR) consider the following guidelines:
     ```
 
 11. In GitHub, send a pull request to `butler:master`.
+
+## Commit Message Guidelines <a name="commit-message-guidelines"></a>
+
+To make it easy to adhere to our commit message guidelines, we use a prompt tool built
+by `commitlint` and it can be accessed by:
+
+```shell
+> make commit
 
 ### Commit Message Format <a name="commit-message-format"></a>
 
